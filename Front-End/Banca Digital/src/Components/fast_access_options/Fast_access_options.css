@@ -1,0 +1,12 @@
+.Fast_access_options_Container {
+  display: flex;
+  width: 100vw;
+  height: 8rem;
+  padding-top: 70px;
+}
+
+.options_fastAccess {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
