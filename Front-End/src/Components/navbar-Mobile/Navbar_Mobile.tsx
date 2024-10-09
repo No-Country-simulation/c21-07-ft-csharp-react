@@ -5,6 +5,7 @@ import { Sub_Menu } from "./Sub_Menu_Mobile/Sub_Menu";
 export const Navbar_Mobile = () => {
   const [Menu, setMenu] = useState("/HamburgerMenu-Icon.png");
   const [ViewSubMenu, setViewSubMenu] = useState(false);
+  const [ViewUserSetting, setViewUserSetting] = useState(false);
 
   const HandleClick = () => {
     if (Menu === "/HamburgerMenu-Icon.png") {
@@ -22,7 +23,9 @@ export const Navbar_Mobile = () => {
           <img className="Icons-Navbar" src={Menu} alt="" />
         </button>
         <img className="Icons-Navbar logo" src="/Logo-Icon.png" alt="" />
-        <img className="Icons-Navbar" src="/User-Icon.png" alt="" />
+        <a href="" onClick={() => setViewUserSetting(!ViewUserSetting)}>
+          <img className="Icons-Navbar" src="/User-Icon.png" alt="" />
+        </a>
       </div>
       {ViewSubMenu && <Sub_Menu />}
     </>

@@ -1,0 +1,49 @@
+.Navbar_container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  background: whitesmoke;
+  align-items: center;
+}
+.logo_home {
+  width: 100px;
+  height: 100px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.userIcon_home {
+  width: 60px;
+  height: 60px;
+  margin-right: 35px;
+  margin-top: 10px;
+}
+
+.list_home {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.div_navbar_options {
+  display: flex;
+  gap: 16rem;
+}
+
+.opcions_menu {
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.arrow_menu {
+  margin-top: 5px;
+  width: 35px;
+  height: 35px;
+  rotate: 90deg;
+}

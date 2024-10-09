@@ -1,13 +1,19 @@
 .cuenta_container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: 7rem;
-  padding-left: 18px;
+  gap: 10px;
+  margin-top: 30px;
 }
 
 .data_account {
   width: 85%;
   display: flex;
   justify-content: space-between;
+  margin-left: 30px;
+}
+
+.title {
+  color: rgb(6, 6, 177);
 }

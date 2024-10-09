@@ -1,4 +1,4 @@
-import "./Cuenta.css";
+import "./Account.css";
 
 interface props {
   prefijo: string;
@@ -6,7 +6,7 @@ interface props {
   saldo: number;
 }
 
-export const Cuenta = ({ prefijo, identificador, saldo }: props) => {
+export const Account = ({ prefijo, identificador, saldo }: props) => {
   return (
     <div className="cuenta_container">
       <h2 className="title">Cuenta</h2>
