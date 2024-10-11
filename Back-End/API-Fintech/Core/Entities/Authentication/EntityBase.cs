@@ -1,9 +1,9 @@
 ﻿
 namespace API_Fintech.Models.Authentication
 {
-    public class UserBase
+    public class EntityBase<Ti> 
     {
-        private long Id { get; set; }
+        public Ti Id { get; set; }
 
     }
 }

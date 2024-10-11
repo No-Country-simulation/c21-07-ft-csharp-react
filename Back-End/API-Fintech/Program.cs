@@ -1,3 +1,8 @@
+using API_Fintech.Core.Adapters.Middlewares;
+using API_Fintech.Core.Adapters.Middlewares.ExceptionMiddleware;
+using Microsoft.AspNetCore.Diagnostics;
+using System.Net;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,7 +21,32 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+
+
 app.UseHttpsRedirection();
+
+
+// Exception handling middleware
+app.UseExceptionHandler(errorApp =>
+{
+    errorApp.Run(async context =>
+    {
+        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+        context.Response.ContentType = "application/json";
+
+        var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+        var exception = exceptionHandlerPathFeature?.Error;
+
+        await context.Response.WriteAsync(new ErrorDetails()
+        {
+            StatusCode = context.Response.StatusCode,
+            Message = "Internal Server Error."
+        }.ToString());
+    });
+});
+
+
 
 app.UseAuthorization();
 
