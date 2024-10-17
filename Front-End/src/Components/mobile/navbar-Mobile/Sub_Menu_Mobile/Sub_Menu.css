@@ -1,0 +1,66 @@
+.Sub_Menu_Container {
+  display: flex;
+  width: 100%;
+  margin-top: 0;
+  height: 100px;
+  justify-content: center;
+}
+
+.List_options {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.Options_Sub_menu {
+  display: flex;
+  align-items: center;
+}
+
+.Options_Sub_menu > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Icon_Sub_menu {
+  height: 30px;
+  width: 30px;
+}
+
+.arrow_subMenu {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  rotate: -90deg;
+}
+.Options_Sub_menu > div:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .Sub_Menu_Container {
+    flex-direction: column;
+    background: #004aad;
+    height: 200px;
+    margin-top: 60px;
+    position: fixed;
+    color: white;
+  }
+
+  .List_options {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .Options_Sub_menu {
+    margin-left: 20px;
+    justify-content: space-between;
+  }
+
+  .arrow_subMenu {
+    rotate: 180deg;
+  }
+}

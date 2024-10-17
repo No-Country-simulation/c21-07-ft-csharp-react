@@ -9,7 +9,9 @@ interface props {
 export const Account = ({ prefijo, identificador, saldo }: props) => {
   return (
     <div className="cuenta_container">
-      <h2 className="title">Cuenta</h2>
+      <div className="title_accout">
+        <h2>Cuenta</h2>
+      </div>
       <div className="data_account">
         <div>
           <h3>
