@@ -20,6 +20,7 @@
   height: 40px;
   align-items: center;
   padding-left: 50px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {

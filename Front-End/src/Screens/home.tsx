@@ -21,9 +21,9 @@ export const Home = () => {
   }, []);
   return (
     <div>
-      {windowWidth < 768 ? <Navbar_Mobile /> : <Navbar />}
+      {windowWidth <= 770 ? <Navbar_Mobile /> : <Navbar />}
       <div className="home_div">
-        {windowWidth < 768 ? (
+        {windowWidth <= 770 ? (
           <>
             <Fast_access_options />
             <Transacciones />
