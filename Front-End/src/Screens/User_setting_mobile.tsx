@@ -11,7 +11,6 @@ export const User_setting_mobile = () => {
           <li>Contacto soporte</li>
           <li>Preguntas Frecuentes</li>
         </ul>
-        <button>Cerrar sesion</button>
       </div>
     </>
   );
