@@ -20,7 +20,7 @@ export const Home = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <div>
+    <div className="home_container">
       {windowWidth <= 770 ? <Navbar_Mobile /> : <Navbar />}
       <div className="home_div">
         {windowWidth <= 770 ? (
