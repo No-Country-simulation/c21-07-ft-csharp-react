@@ -1,4 +1,4 @@
-﻿using API_Fintech.Infraestructure.Data.Config;
+﻿using API_Fintech.Infraestructure.Data.Config.Context;
 using API_Fintech.Infraestructure.Data.Repository;
 using API_Fintech.Models.Authentication;
 using Microsoft.EntityFrameworkCore;

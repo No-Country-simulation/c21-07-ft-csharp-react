@@ -16,7 +16,7 @@ namespace API_Fintech.Core.Adapters.Controllers
             _authenticationService = authenticationService;
         }
 
-          [HttpPost]
+        [HttpPost]
         public async Task<ActionResult> Login([FromBody] LoginDto dto) 
         { 
 
@@ -37,8 +37,6 @@ namespace API_Fintech.Core.Adapters.Controllers
                     UserId = userId,
                     Token = token
                 };
-
-
 
 
                 return Ok(response);

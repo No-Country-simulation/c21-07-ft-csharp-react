@@ -26,12 +26,25 @@ namespace API_Fintech.Core.Services
 
         public async Task<string> GetToken(LoginDto dto)
         {
-            var userRepository = _unitOfWork.GetRepository<UserAuth, long>();
-            var hash = await userRepository.GetProyected(q => q.Email == dto.Email, p => p.Password) ?? throw new BusinessNotFoundException("ErrUserNotFound");
+            try
+            {
+                Console.WriteLine("Aqui esta el COREEEOOOO Y PASSSS " + dto.Email + " " + dto.Password + " ");
 
-            if (!_securityService.Verify(dto.Password, hash)) throw new BusinessException("ErrInvalidEmailOrPassword");
+                var userRepository = _unitOfWork.GetRepository<UserAuth, long>();
+                var hash = await userRepository.GetProyected(q => q.Email == dto.Email, p => p.Password) ?? throw new BusinessNotFoundException("ErrUserNotFound");
 
-            return GenerateTokenJwt(dto.Email);
+                if (!_securityService.Verify(dto.Password, hash)) throw new BusinessException("ErrInvalidEmailOrPassword");
+
+                return GenerateTokenJwt(dto.Email);
+            }
+            catch (Exception ex)
+            {
+               Console.WriteLine("ACA AGARRAMOS CON CATCH JEJE");
+               Console.WriteLine(ex.Message);
+            }
+
+            return string.Empty;
+          
         }
 
         public async Task<long?> GetUser(string email)

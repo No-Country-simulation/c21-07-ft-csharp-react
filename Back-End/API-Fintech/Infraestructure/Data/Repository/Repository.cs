@@ -1,17 +1,19 @@
-﻿using API_Fintech.Infraestructure.Data.Config;
-using API_Fintech.Models.Authentication;
+﻿using API_Fintech.Models.Authentication;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
+using EFCore.BulkExtensions;
+using API_Fintech.Infraestructure.Data.Config.Context;
 
 namespace API_Fintech.Infraestructure.Data.Repository
 {
     public class Repository<TE, TI> : IRepository<TE, TI> where TE : EntityBase<TI>
     {
-        private DbSet<TE> _dbSet;
-
+        private readonly DbSet<TE> _dbSet;
+        private readonly DefaultContext _context;
 
         public Repository(DefaultContext context)
         {
+            _context = context;
             _dbSet = context.Set<TE>();
         }
 
@@ -44,6 +46,11 @@ namespace API_Fintech.Infraestructure.Data.Repository
             _dbSet.Remove(entity);
         }
 
+        public void Update(TE entity)
+        {
+            _dbSet.Update(entity);
+        }
+
         public void DeleteMany(IEnumerable<TE> entities)
         {
             _dbSet.RemoveRange(entities);
@@ -52,6 +59,28 @@ namespace API_Fintech.Infraestructure.Data.Repository
         public void DeleteMany(TE[] entities)
         {
             _dbSet.RemoveRange(entities);
+        }
+
+        public async Task BulkInsert(IEnumerable<TE> entities)
+        {
+
+            await _context.BulkInsertAsync(entities.ToList());
+
+        }
+
+        public async Task BulkDelete(IEnumerable<TE> entities)
+        {
+
+
+            await _context.BulkDeleteAsync(entities.ToList());
+
+        }
+
+        public async Task BulkUpdate(IEnumerable<TE> entities)
+        {
+
+            await _context.BulkUpdateAsync(entities.ToList());
+
         }
 
         public async Task<TE?> Get(TI id)
@@ -85,11 +114,7 @@ namespace API_Fintech.Infraestructure.Data.Repository
                                .ToListAsync();
         }
 
-        public void Update(TE entity)
-        {
-            _dbSet.Update(entity);
-        }
-
+ 
         public async Task<TProyected?> GetProyected<TProyected>(Expression<Func<TE, bool>> predicate, Expression<Func<TE, TProyected>> proyection)
         {
             return await _dbSet.Where(predicate)
@@ -97,13 +122,17 @@ namespace API_Fintech.Infraestructure.Data.Repository
                                .FirstOrDefaultAsync();
 
         }
+      
 
-        public async Task<IEnumerable<TProyected>> GetProyectedMany<TProyected>(
+        public async Task<IEnumerable<TProyected?>> GetProyectedMany<TProyected>(
             Expression<Func<TE, bool>> predicate, Expression<Func<TE, TProyected>> proyection)
         {
-            return await _dbSet.Where(predicate)
-                               .Select(proyection)
-                               .ToListAsync();
+
+            IEnumerable<TProyected>  result = await _dbSet.Where(predicate)
+                            .Select(proyection)
+                            .ToListAsync();
+
+            return result;
         }
     }
 }
