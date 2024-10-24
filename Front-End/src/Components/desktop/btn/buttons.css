@@ -1,0 +1,21 @@
+.button_styles {
+  background: #999;
+  color: white;
+  border-radius: 99999px;
+  height: 3rem;
+  width: 9rem;
+  border: none;
+}
+
+.colorback {
+  background: #0066b3;
+}
+
+.button_styles:hover {
+  cursor: pointer;
+  background: #757575;
+}
+
+.colorback:hover {
+  background: #0272c9;
+}

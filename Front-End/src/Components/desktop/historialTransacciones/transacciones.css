@@ -58,39 +58,21 @@ td {
   text-align: center;
 }
 
-.title_colums {
-  font-size: 17px;
-}
-.text_colums {
-  font-size: 14px;
-}
-
-@media (max-width: 1024px) {
-  .title_colums {
-    font-size: 12px;
-  }
-  .text_colums {
-    font-size: 11px;
-  }
-}
-
 @media (max-width: 768px) {
   .transacciones_container {
     width: 100%;
   }
 }
 
-@media (max-width: 349px) {
-  .title_colums {
-    font-size: 10px;
-  }
-  .text_colums {
-    font-size: 9px;
-  }
+@media (max-width: 425px) {
   .title_transacciones_div > h2 {
     font-size: 20px;
   }
   .list_transacciones {
     gap: 0.5rem;
+  }
+  table {
+    overflow-x: auto;
+    display: block;
   }
 }

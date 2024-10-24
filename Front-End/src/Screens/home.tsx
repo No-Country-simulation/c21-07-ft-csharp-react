@@ -1,10 +1,11 @@
 import "./home.css";
 import { Transacciones } from "../Components/desktop/historialTransacciones/Transacciones";
-import { Navbar } from "../Components/desktop/navbar/Navbar";
+
 import { Account } from "../Components/mobile/account/Account";
 import { Fast_access_options } from "../Components/mobile/fast_access_options/Fast_access_options";
 import { useEffect, useState } from "react";
-import { Navbar_Mobile } from "../Components/mobile/navbar-Mobile/Navbar_Mobile";
+
+import { NavbarWindowWidth } from "../Components/desktop/navbar/NavbarWindowWidth";
 
 export const Home = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -21,7 +22,7 @@ export const Home = () => {
   }, []);
   return (
     <div className="home_container">
-      {windowWidth <= 770 ? <Navbar_Mobile /> : <Navbar />}
+      <NavbarWindowWidth />
       <div className="home_div">
         {windowWidth <= 770 ? (
           <>

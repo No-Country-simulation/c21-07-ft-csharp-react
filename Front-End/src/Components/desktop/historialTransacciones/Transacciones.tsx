@@ -6,13 +6,15 @@ export const Transacciones = () => {
     "Fecha",
     "Descripción",
     "Numero de transaccion",
-    "Debito",
-    "Credito",
+    "Destinatario",
+    "Monto",
   ];
   const datosTransferencias = [
-    ["1/2/2014", "34345464", "sueldo", "18000", ""],
-    ["12/4/2018", "45646564", "compra comercio", "", "1000"],
-    ["6/8/2024", "45649864", "retiro abitab", "500", ""],
+    ["1/2/2014", "sueldo", "34345464", "12341654", "18000"],
+    ["12/4/2018", "compra comercio", "45646564", "123146546", "1000"],
+    ["6/8/2024", "retiro abitab", "45649864", "132456465", "500"],
+    ["6/8/2024", "retiro abitab", "45649864", "132456465", "500"],
+    ["6/8/2024", "retiro abitab", "45649864", "132456465", "500"],
   ];
   return (
     <div className="transacciones_container">
