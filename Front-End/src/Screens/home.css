@@ -1,0 +1,13 @@
+.home_div {
+  padding-top: 9rem;
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  .home_div {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+}

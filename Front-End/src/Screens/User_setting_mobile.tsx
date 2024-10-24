@@ -1,4 +1,4 @@
-import { Navbar_Mobile } from "../Components/navbar-Mobile/Navbar_Mobile";
+import { Navbar_Mobile } from "../Components/mobile/navbar-Mobile/Navbar_Mobile";
 
 export const User_setting_mobile = () => {
   return (

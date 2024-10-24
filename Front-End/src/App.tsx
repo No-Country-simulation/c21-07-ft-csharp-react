@@ -1,13 +1,19 @@
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./Screens/home";
+import { Login } from "./Components/desktop/login/Login";
+import { Registro } from "./Components/desktop/registro/registro";
 
-import { Home_mobile } from "./Screens/home_mobile";
-
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <Home_mobile />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
