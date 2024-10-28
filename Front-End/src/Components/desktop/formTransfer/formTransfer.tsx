@@ -46,6 +46,7 @@ export const FormTransfer = () => {
           className="inputTransfer"
           type="text"
           id="cuenta_origen"
+          value="1111111111"
           disabled
         />
         <label htmlFor="cuenta_destino">Cuenta de destino</label>

@@ -11,10 +11,6 @@ export const UserOptions = ({ view }: UserOptionsProps) => {
   return (
     <StyledWrapper onMouseLeave={view}>
       <div className="input">
-        <button className="value">
-          <Icon name="user" size={15} />
-          Perfil Público
-        </button>
         <button className="value" onClick={() => navigate("/settings")}>
           <Icon name="config" size={15} />
           Configuraciones
