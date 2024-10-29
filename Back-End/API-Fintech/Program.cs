@@ -59,11 +59,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters = tokenValidationParameters;
     });
 
+
 // Registrar servicios y repositorios
 builder.Services.AddScoped<IContextProvider, JwtContextProvider>();
 builder.Services.AddDbContext<DefaultContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration["ConnectionStrings:Users"]);
+    options.UseSqlServer(builder.Configuration["ConectionToDB"]);
 });
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -83,7 +84,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", builder =>
+    {
+        builder.WithOrigins("http://localhost:5173") // El origen de tu front-end
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
+
 
 // Configuración del pipeline para desarrollo (Swagger)
 if (app.Environment.IsDevelopment())
@@ -91,6 +103,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowSpecificOrigin");
 
 app.UseHttpsRedirection();
 
