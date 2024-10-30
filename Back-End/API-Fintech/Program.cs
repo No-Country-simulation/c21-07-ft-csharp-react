@@ -71,6 +71,8 @@ builder.Services.AddDbContext<DefaultContext>(options =>
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(EntityBase<long>), typeof(UserAuth));
+builder.Services.AddScoped(typeof(EntityBase<long>), typeof(Account));
+builder.Services.AddScoped(typeof(EntityBase<long>), typeof(Transaction));
 builder.Services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<ISecurityService, SecurityService>();
