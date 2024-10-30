@@ -1,3 +1,4 @@
+using API_Fintech.Core.Adapters.Middlewares;
 using API_Fintech.Core.Adapters.Middlewares.ExceptionMiddleware;
 using API_Fintech.Core.Services;
 using API_Fintech.Infraestructure.Data.Config.Context;
@@ -11,15 +12,20 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Net;
 using System.Text;
-
+using MailKit.Net.Smtp;
+using MimeKit;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using API_Fintech.Models.Transaction;
+using API_Fintech.Core.Entities.Transaction;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuraciï¿½n del secreto para JWT
+// Configuración del secreto para JWT
 var secretKey = builder.Configuration.GetValue<string>("Audience:Secret") ?? "DefaultSecretKey";
 var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
 
-// Configuraciï¿½n de la validaciï¿½n de token JWT
+// Configuración de la validación de token JWT
 var tokenValidationParameters = new TokenValidationParameters
 {
     ValidateIssuer = false,
@@ -32,7 +38,7 @@ var tokenValidationParameters = new TokenValidationParameters
     ValidateIssuerSigningKey = true
 };
 
-// Configuraciï¿½n del esquema de autenticaciï¿½n JWT
+// Configuración del esquema de autenticación JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -55,11 +61,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters = tokenValidationParameters;
     });
 
+
 // Registrar servicios y repositorios
 builder.Services.AddScoped<IContextProvider, JwtContextProvider>();
 builder.Services.AddDbContext<DefaultContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration["ConnectionStrings:Users"]);
+    options.UseSqlServer(builder.Configuration["ConectionToDB"]);
 });
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -69,28 +76,41 @@ builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<ISecurityService, SecurityService>();
 builder.Services.AddScoped<RegisterService>();
 
-// Configuraciï¿½n del servicio de correos electrï¿½nicos
+// Configuración del servicio de correos electrónicos
 builder.Services.AddScoped<EmailService>();
 
-// Leer la configuraciï¿½n del archivo appsettings.json
+// Leer la configuración del archivo appsettings.json
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", builder =>
+    {
+        builder.WithOrigins("http://localhost:5173") // El origen de tu front-end
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
 
-// Configuraciï¿½n del pipeline para desarrollo (Swagger)
+
+// Configuración del pipeline para desarrollo (Swagger)
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+app.UseCors("AllowSpecificOrigin");
+
 app.UseHttpsRedirection();
 
-// Middleware de manejo de excepciones con notificaciï¿½n por correo
+// Middleware de manejo de excepciones con notificación por correo
 app.UseExceptionHandler(errorApp =>
 {
     errorApp.Run(async context =>
@@ -101,10 +121,10 @@ app.UseExceptionHandler(errorApp =>
         var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
         var exception = exceptionHandlerPathFeature?.Error;
 
-        // Obtener el servicio de correo electrï¿½nico
+        // Obtener el servicio de correo electrónico
         var emailService = context.RequestServices.GetRequiredService<EmailService>();
 
-        // Enviar un correo si ocurre una excepciï¿½n
+        // Enviar un correo si ocurre una excepción
         if (exception != null)
         {
             var subject = "Error en la API";
