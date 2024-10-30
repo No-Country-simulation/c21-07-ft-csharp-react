@@ -2,11 +2,11 @@
 {
     public class SecurityService : ISecurityService
     {
-        public bool Verify(string password, string hash)
+        public bool Verify(string verificable, string hash)
         {
             try
             {
-                return BCrypt.Net.BCrypt.Verify(password, hash);
+                return BCrypt.Net.BCrypt.Verify(verificable, hash);
             }
             catch { return false; }
 

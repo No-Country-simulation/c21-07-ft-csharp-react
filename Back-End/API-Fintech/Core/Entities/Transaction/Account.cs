@@ -1,13 +1,15 @@
+using API_Fintech.Models.Authentication;
+
 namespace API_Fintech.Models.Transaction
 {
-    public class Account
+    public class Account : EntityBase<long>
     {
-        public long Id { get; set; }
-        public long UserId { get; set; }
+     
+        public long UserAuthId { get; set; }
         public long AccountNumber { get; set; }
-        public string AccountType { get; set; }
-        public decimal Balance { get; set; }
-        public DateTime DateOfCreation { get; set; }
+        public required string AccountType { get; set; }
+        public double Balance { get; set; }
 
     }
+
 }

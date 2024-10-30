@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Back-End/API-Fintech/.vs/API-Fintech/copilot-chat/e4fc98ec/sessions
+/Back-End/API-Fintech/.vs/API-Fintech/CopilotIndices/0.2.1627.58842
+/Back-End/API-Fintech/.vs/API-Fintech/FileContentIndex
+/Back-End/API-Fintech/.vs/API-Fintech/v17
+/Back-End/API-Fintech/Migrations
+/Back-End/API-Fintech/obj
+/Back-End/API-Fintech/.vs/API-Fintech/config
+/Back-End/API-Fintech/.vs/API-Fintech/DesignTimeBuild
+/Back-End/API-Fintech/.vs/ProjectEvaluation
