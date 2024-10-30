@@ -1,4 +1,3 @@
-using API_Fintech.Core.Adapters.Middlewares;
 using API_Fintech.Core.Adapters.Middlewares.ExceptionMiddleware;
 using API_Fintech.Core.Services;
 using API_Fintech.Infraestructure.Data.Config.Context;
@@ -12,18 +11,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Net;
 using System.Text;
-using MailKit.Net.Smtp;
-using MimeKit;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuración del secreto para JWT
+// Configuraciï¿½n del secreto para JWT
 var secretKey = builder.Configuration.GetValue<string>("Audience:Secret") ?? "DefaultSecretKey";
 var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
 
-// Configuración de la validación de token JWT
+// Configuraciï¿½n de la validaciï¿½n de token JWT
 var tokenValidationParameters = new TokenValidationParameters
 {
     ValidateIssuer = false,
@@ -36,7 +32,7 @@ var tokenValidationParameters = new TokenValidationParameters
     ValidateIssuerSigningKey = true
 };
 
-// Configuración del esquema de autenticación JWT
+// Configuraciï¿½n del esquema de autenticaciï¿½n JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -73,10 +69,10 @@ builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<ISecurityService, SecurityService>();
 builder.Services.AddScoped<RegisterService>();
 
-// Configuración del servicio de correos electrónicos
+// Configuraciï¿½n del servicio de correos electrï¿½nicos
 builder.Services.AddScoped<EmailService>();
 
-// Leer la configuración del archivo appsettings.json
+// Leer la configuraciï¿½n del archivo appsettings.json
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
 builder.Services.AddControllers();
@@ -85,7 +81,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configuración del pipeline para desarrollo (Swagger)
+// Configuraciï¿½n del pipeline para desarrollo (Swagger)
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -94,7 +90,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Middleware de manejo de excepciones con notificación por correo
+// Middleware de manejo de excepciones con notificaciï¿½n por correo
 app.UseExceptionHandler(errorApp =>
 {
     errorApp.Run(async context =>
@@ -105,10 +101,10 @@ app.UseExceptionHandler(errorApp =>
         var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
         var exception = exceptionHandlerPathFeature?.Error;
 
-        // Obtener el servicio de correo electrónico
+        // Obtener el servicio de correo electrï¿½nico
         var emailService = context.RequestServices.GetRequiredService<EmailService>();
 
-        // Enviar un correo si ocurre una excepción
+        // Enviar un correo si ocurre una excepciï¿½n
         if (exception != null)
         {
             var subject = "Error en la API";

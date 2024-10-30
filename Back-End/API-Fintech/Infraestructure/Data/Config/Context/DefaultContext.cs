@@ -28,6 +28,8 @@ namespace API_Fintech.Infraestructure.Data.Config.Context
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new UserAuthConfiguration());
+            modelBuilder.ApplyConfiguration(new AccountConfiguration());
+            modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
             Seeds.SeedData.Seeds(modelBuilder);
         }

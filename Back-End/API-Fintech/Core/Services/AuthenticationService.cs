@@ -5,6 +5,7 @@ using API_Fintech.InterfaceAdapters;
 using API_Fintech.Models.Authentication.Users;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net.NetworkInformation;
 using System.Security.Claims;
 using System.Text;
 
@@ -28,7 +29,6 @@ namespace API_Fintech.Core.Services
         {
             try
             {
-                Console.WriteLine("Aqui esta el COREEEOOOO Y PASSSS " + dto.Email + " " + dto.Password + " ");
 
                 var userRepository = _unitOfWork.GetRepository<UserAuth, long>();
                 var hash = await userRepository.GetProyected(q => q.Email == dto.Email, p => p.Password) ?? throw new BusinessNotFoundException("ErrUserNotFound");
@@ -39,7 +39,6 @@ namespace API_Fintech.Core.Services
             }
             catch (Exception ex)
             {
-               Console.WriteLine("ACA AGARRAMOS CON CATCH JEJE");
                Console.WriteLine(ex.Message);
             }
 
@@ -47,12 +46,20 @@ namespace API_Fintech.Core.Services
           
         }
 
+        public async Task<bool> ValidatePinWithEmail(string pin, string email)
+        {
+
+            var userAuthRepository = _unitOfWork.GetRepository<UserAuth, long>();
+
+            var userPin = await userAuthRepository.GetProyected(q => q.Email == email, p => p.PIN);
+
+            return userPin == null ? throw new BusinessNotFoundException("ErrUserNotFound") : _securityService.Verify(pin, userPin);
+        }
+
         public async Task<long?> GetUser(string email)
         {
             var userRepository = _unitOfWork.GetRepository<UserAuth, long>();
             long? user = await userRepository.GetProyected(q => q.Email == email, p => p.Id);
-
-
 
             return user;
         }

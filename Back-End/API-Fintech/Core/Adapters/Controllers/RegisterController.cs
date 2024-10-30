@@ -18,13 +18,13 @@ namespace API_Fintech.Core.Adapters.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Register([FromBody] LoginDto dto)
+        public async Task<ActionResult> Register([FromBody] RegisterDto dto)
         {
             try
             {
                 await registerService.Register(dto);
 
-      
+
                 return Ok("User creado con exito");
             }
             catch (Exception ex)

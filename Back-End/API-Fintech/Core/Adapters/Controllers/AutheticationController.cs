@@ -1,7 +1,9 @@
 ﻿using API_Fintech.Core.Services;
 using API_Fintech.InterfaceAdapters;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Authentication;
+using System.Security.Claims;
 
 namespace API_Fintech.Core.Adapters.Controllers
 {
@@ -16,11 +18,11 @@ namespace API_Fintech.Core.Adapters.Controllers
             _authenticationService = authenticationService;
         }
 
-        [HttpPost]
-        public async Task<ActionResult> Login([FromBody] LoginDto dto) 
-        { 
+        [HttpPost("Login")]
+        public async Task<ActionResult> Login([FromBody] LoginDto dto)
+        {
 
-           try
+            try
             {
 
                 var token = await _authenticationService.GetToken(dto);
@@ -41,14 +43,40 @@ namespace API_Fintech.Core.Adapters.Controllers
 
                 return Ok(response);
             }
-           catch (AuthenticationException ex)
+            catch (AuthenticationException ex)
             {
-                return Unauthorized(ex.Message + "AuthExcpAuthController");
+                return Unauthorized(ex.Message + "AuthExceptionAuthController");
             }
             catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
+        }
+
+        [Authorize]
+        [HttpPost("ValidatePIN")]
+
+        public async  Task<IActionResult> ValidatePIN([FromBody] int pin)
+        {
+
+            var email = User?.FindFirst(ClaimTypes.NameIdentifier)?.Value; 
+
+            if (string.IsNullOrEmpty(email))
+            {
+                return Unauthorized("Invalid credentials");
+            }
+
+            var result =  await _authenticationService.ValidatePinWithEmail(pin.ToString(), email);
+
+            if (!result)
+            {
+                return Unauthorized("Invalid PIN");
+            }
+            else
+            {
+                return Ok();
+            }
+
         }
     }
 }

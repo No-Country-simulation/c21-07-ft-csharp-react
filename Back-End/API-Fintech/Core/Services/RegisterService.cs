@@ -16,7 +16,7 @@ namespace API_Fintech.Core.Services
 
         }
 
-        public async Task Register(LoginDto dto)
+        public async Task Register(RegisterDto dto)
         {
             IRepository<UserAuth, long> _repository = _unitOfWork.GetRepository<UserAuth, long>();
 
@@ -29,6 +29,9 @@ namespace API_Fintech.Core.Services
             {
                 Email = dto.Email,
                 Password = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
+                PIN = BCrypt.Net.BCrypt.HashPassword(dto.PIN.ToString()),
                 Roles = ["NormalUser"]
             });
 
