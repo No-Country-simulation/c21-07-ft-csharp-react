@@ -18,6 +18,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using API_Fintech.Models.Transaction;
 using API_Fintech.Core.Entities.Transaction;
+using API_Fintech.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -61,12 +62,47 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters = tokenValidationParameters;
     });
 
+// Configuración de Swagger con soporte para autenticación JWT
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "API Fintech",
+        Version = "v1"
+    });
+
+    // Configuración para añadir el esquema de autenticación JWT en Swagger
+    options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = Microsoft.OpenApi.Models.SecuritySchemeType.Http,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Description = "Ingrese 'Bearer' seguido de un espacio y el token JWT."
+    });
+
+    options.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    {
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
 
 // Registrar servicios y repositorios
 builder.Services.AddScoped<IContextProvider, JwtContextProvider>();
 builder.Services.AddDbContext<DefaultContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration["ConectionToDB"]);
+    options.UseSqlServer(builder.Configuration["ConnectionStrings:Users"]);
 });
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -77,6 +113,7 @@ builder.Services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<ISecurityService, SecurityService>();
 builder.Services.AddScoped<RegisterService>();
+builder.Services.AddScoped<AccountService>();
 
 // Configuración del servicio de correos electrónicos
 builder.Services.AddScoped<EmailService>();
@@ -126,7 +163,7 @@ app.UseExceptionHandler(errorApp =>
         // Obtener el servicio de correo electrónico
         var emailService = context.RequestServices.GetRequiredService<EmailService>();
 
-        // Enviar un correo si ocurre una excepción
+        // Enviar un correo si ocurre una excepción 
         if (exception != null)
         {
             var subject = "Error en la API";
@@ -145,6 +182,7 @@ app.UseExceptionHandler(errorApp =>
     });
 });
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
