@@ -15,6 +15,9 @@
   width: 100%;
 }
 
+.noTransaction {
+  margin: auto;
+}
 .title_transacciones_div {
   width: 100%;
   background: white;
@@ -65,12 +68,14 @@ td {
 }
 
 @media (max-width: 425px) {
-  .title_transacciones_div > h2 {
+  .title_transacciones_div > h2,
+  .noTransaction {
     font-size: 20px;
   }
   .list_transacciones {
     gap: 0.5rem;
   }
+
   table {
     overflow-x: auto;
     display: block;

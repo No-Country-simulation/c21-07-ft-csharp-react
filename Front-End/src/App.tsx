@@ -5,6 +5,7 @@ import { Login } from "./Components/desktop/login/Login";
 import { Registro } from "./Components/desktop/registro/registro";
 import { UserConfings } from "./Screens/User_setting_mobile";
 import { Transferir } from "./Screens/Transferir";
+import { NotificationsScreen } from "./Screens/NotificationsScreen";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/settings" element={<UserConfings />} />
         <Route path="/transferencia" element={<Transferir />} />
+        <Route path="/notificaciones" element={<NotificationsScreen />} />
       </Routes>
     </Router>
   );

@@ -1,9 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import Icon from "../../../icons";
 import "./Sub_Menu.css";
+import BtnCloseSession from "../../../desktop/navbar/btnCloseSession";
+import { UseWindoWidth } from "../../../../resize/UseWindoWidth";
 
 export const Sub_Menu = () => {
   const navigate = useNavigate();
+  const windowWidth = UseWindoWidth();
 
   return (
     <div className="Sub_Menu_Container">
@@ -15,19 +18,32 @@ export const Sub_Menu = () => {
           </div>
         </li>
         <li className="Options_Sub_menu">
-          <div>
-            <Icon name="consultar" size={30} />
-            <p>Consultar</p>
+          <div onClick={() => navigate("/transferencia")}>
+            <Icon name="transferirMenu" size={30} />
+            <p>Transferir</p>
           </div>
-          <Icon name="arrow" />
         </li>
         <li className="Options_Sub_menu">
-          <div>
-            <Icon name="operar" size={30} />
-            <p>Operar</p>
+          <div onClick={() => navigate("/prestamo")}>
+            <Icon name="prestamoMenu" size={30} />
+            <p>Prestamo </p>
           </div>
-          <Icon name="arrow" />
         </li>
+        {windowWidth <= 770 ? (
+          <>
+            <li className="Options_Sub_menu">
+              <div onClick={() => navigate("/notificaciones")}>
+                <Icon name="notification" size={30} />
+                <p>Notificaciones</p>
+              </div>
+            </li>
+            <li className="Options_Sub_menu closeSession">
+              <BtnCloseSession></BtnCloseSession>
+            </li>
+          </>
+        ) : (
+          ""
+        )}
       </ul>
     </div>
   );

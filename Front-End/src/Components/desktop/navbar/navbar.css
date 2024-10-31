@@ -46,3 +46,9 @@
   top: 72px;
   margin-right: 55px;
 }
+
+.close-session {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

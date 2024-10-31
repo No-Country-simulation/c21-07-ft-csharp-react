@@ -2,11 +2,11 @@ import { useState } from "react";
 import "./Nabvar_Mobile.css";
 import { Sub_Menu } from "./Sub_Menu_Mobile/Sub_Menu";
 import Icon from "../../icons";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar_Mobile = () => {
   const [ViewSubMenu, setViewSubMenu] = useState(false);
-  const [ViewUserSetting, setViewUserSetting] = useState(false);
-
+  const navigate = useNavigate();
   const HandleClick = () => {
     setViewSubMenu(!ViewSubMenu);
   };
@@ -21,9 +21,12 @@ export const Navbar_Mobile = () => {
           )}
         </button>
         <Icon name="bankLogo" />
-        <a href="" onClick={() => setViewUserSetting(!ViewUserSetting)}>
+        <button
+          className="button_user_menu"
+          onClick={() => navigate("/settings")}
+        >
           <Icon name="userIcon" />
-        </a>
+        </button>
       </div>
       {ViewSubMenu && <Sub_Menu />}
     </>

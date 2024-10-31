@@ -1,16 +1,15 @@
-import { useState } from "react";
 import "./navbar.css";
-import { UserOptions } from "../userOptions/UserOptions";
 import { Sub_Menu } from "../../mobile/navbar-Mobile/Sub_Menu_Mobile/Sub_Menu";
 import Icon from "../../icons";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { UserMenu } from "../UserMenu/userMenu";
 
 export const Navbar = () => {
-  const [settings, setUserSettings] = useState(false);
+  const [open, setOpen] = useState(false);
+
   const navigate = useNavigate();
-  const handleClickUserSettings = () => {
-    setUserSettings(!settings);
-  };
+
   return (
     <div className="Navbar_container">
       <div className="div_navbar_options">
@@ -19,14 +18,17 @@ export const Navbar = () => {
         </div>
         <Sub_Menu />
       </div>
-      <button className="button_user" onClick={handleClickUserSettings}>
-        <Icon name="userIcon" size={40} />
-      </button>
-      <div
-        className="settings"
-        style={settings ? { display: "block" } : { display: "none" }}
-      >
-        <UserOptions view={handleClickUserSettings} />
+      <div className="close-session">
+        <button className="button_user" onClick={() => setOpen(!open)}>
+          <Icon name="userIcon" size={40} />
+        </button>
+        <div
+          className="settings"
+          onMouseLeave={() => setOpen(!open)}
+          style={open ? { display: "block" } : { display: "none" }}
+        >
+          <UserMenu />
+        </div>
       </div>
     </div>
   );

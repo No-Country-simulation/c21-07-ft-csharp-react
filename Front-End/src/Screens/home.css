@@ -14,4 +14,6 @@
 
 .home_container {
   background: whitesmoke;
+  width: 100vw;
+  height: 100vh;
 }

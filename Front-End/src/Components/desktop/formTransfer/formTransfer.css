@@ -1,23 +1,23 @@
-.tranfer_container {
+.transfer-container {
   display: flex;
   width: 100vw;
   height: 100vh;
   justify-content: center;
 }
 
-.form_div {
+.transfer-form-wrapper {
   display: flex;
   flex-direction: column;
   padding-top: 9rem;
 }
 
-.form_div > h2 {
+.transfer-form-wrapper > h2 {
   font-size: 4rem;
   margin-left: 60px;
   margin-bottom: 10rem;
 }
 
-.form_transferir {
+.transfer-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -26,22 +26,24 @@
   font-size: 1.8rem;
 }
 
-.import_transfer {
+.transfer-input-group {
   width: 100%;
   display: flex;
+  align-items: center;
   gap: 5px;
 }
 
-.import_transfer > input {
+.transfer-input-group > input {
   width: 100%;
 }
-.buttons_form {
+
+.transfer-buttons {
   width: 100%;
   display: flex;
   gap: 15px;
 }
 
-.ticket {
+.transfer-ticket-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -54,14 +56,14 @@
   z-index: 1000;
 }
 
-.inputTransfer {
+.transfer-input {
   padding: 11px 10px;
   font-size: 0.85rem;
   border: 2px #818cf8 solid;
   border-radius: 5px;
 }
 
-.form_transferir > label {
+.transfer-form > label {
   font-size: 1.4rem;
   color: #818cf8;
   font-weight: 700;
@@ -71,7 +73,8 @@
   padding: 0 3px;
   width: fit-content;
 }
-.loader {
+
+.transfer-loader {
   width: 28px;
   height: 28px;
   border: 5px solid #818cf8;
@@ -91,17 +94,44 @@
   }
 }
 
+.transfer-check {
+  color: green;
+  font-size: 1.5rem;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
 @media (max-width: 550px) {
-  .form_div {
+  .transfer-form-wrapper {
     align-items: center;
     justify-content: center;
   }
-  .form_div > h2 {
+  .transfer-form-wrapper > h2 {
     margin-left: 0;
     font-size: 40px;
     margin-bottom: 5rem;
   }
-  .form_transferir {
+  .transfer-form {
     font-size: 1.2rem;
+  }
+
+  .transfer-input-group {
+    gap: 1px;
+  }
+
+  .transfer-loader {
+    width: 17px;
+    height: 15px;
+    border: 4px solid #818cf8;
+    border-bottom-color: transparent;
+    border-radius: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
   }
 }

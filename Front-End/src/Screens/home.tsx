@@ -3,23 +3,12 @@ import { Transacciones } from "../Components/desktop/historialTransacciones/Tran
 
 import { Account } from "../Components/mobile/account/Account";
 import { Fast_access_options } from "../Components/mobile/fast_access_options/Fast_access_options";
-import { useEffect, useState } from "react";
-
 import { NavbarWindowWidth } from "../Components/desktop/navbar/NavbarWindowWidth";
+import { UseWindoWidth } from "../resize/UseWindoWidth";
 
 export const Home = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const windowWidth = UseWindoWidth();
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup event listener
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
   return (
     <div className="home_container">
       <NavbarWindowWidth />

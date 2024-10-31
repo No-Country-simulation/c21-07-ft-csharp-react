@@ -1,92 +1,113 @@
-import { useNavigate } from "react-router-dom";
-import styled from "styled-components";
-import Icon from "../../icons";
+import { useState } from "react";
+import "./UserOptions.css";
 
-interface UserOptionsProps {
-  view: () => void;
-}
+export const UserOptions = () => {
+  const [edit, setEdit] = useState(true);
+  const [dataUser, setdataUser] = useState({
+    Nombre: "Hugo",
+    Apellido: "Desiderio",
+    Phone: "12345678",
+    pais: "Uruguay",
+    email: "hugo@gmail.com",
+  });
 
-export const UserOptions = ({ view }: UserOptionsProps) => {
-  const navigate = useNavigate();
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { id, value } = event.target;
+    setdataUser((prevData) => ({
+      ...prevData,
+      [id]: value, // Actualiza la propiedad correspondiente
+    }));
+  };
+
   return (
-    <StyledWrapper onMouseLeave={view}>
-      <div className="input">
-        <button className="value" onClick={() => navigate("/settings")}>
-          <Icon name="config" size={15} />
-          Configuraciones
-        </button>
-        <button className="value">
-          <Icon name="notification" size={15} />
-          Notificaciones
-        </button>
-        <button className="btn_closeSession" onClick={() => navigate("/")}>
-          Cerrar Session
-        </button>
+    <div className="userConfigsContainer">
+      <div>
+        <h2 className="title-settings">Datos de usuario</h2>
+        <div className="data-container">
+          <div className="div-title-data">
+            <p className="title-user-data">Datos Personales</p>
+            <button className="btn-edit" onClick={() => setEdit(!edit)}>
+              {edit ? "Editar" : "Guardar"}
+            </button>
+          </div>
+          <form className="formUserSettings">
+            <div>
+              <label
+                htmlFor="Nombre"
+                className={`title-user-data ${edit ? "" : "titleEditable"}`}
+              >
+                Nombre
+              </label>
+              <input
+                type="text"
+                id="Nombre"
+                className={`data-input ${edit ? "" : "bordes"}`}
+                onChange={handleChange}
+                value={dataUser.Nombre}
+                disabled={edit}
+              />
+              <label
+                htmlFor="Apellido"
+                className={`title-user-data ${edit ? "" : "titleEditable"}`}
+              >
+                Apellido
+              </label>
+              <input
+                type="text"
+                id="Apellido"
+                className={`data-input ${edit ? "" : "bordes"}`}
+                onChange={handleChange}
+                value={dataUser.Apellido}
+                disabled={edit}
+              />
+              <label
+                htmlFor="email"
+                className={`title-user-data ${edit ? "" : "titleEditable"}`}
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                className={`data-input ${edit ? "" : "bordes"}`}
+                onChange={handleChange}
+                value={dataUser.email}
+                disabled={edit}
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="Phone"
+                className={`title-user-data ${edit ? "" : "titleEditable"}`}
+              >
+                Contacto
+              </label>
+              <input
+                type="text"
+                id="Phone"
+                className={`data-input ${edit ? "" : "bordes"}`}
+                onChange={handleChange}
+                value={dataUser.Phone}
+                disabled={edit}
+              />
+              <label
+                htmlFor="pais"
+                className={`title-user-data ${edit ? "" : "titleEditable"}`}
+              >
+                Pais
+              </label>
+              <input
+                type="text"
+                id="pais"
+                className={`data-input ${edit ? "" : "bordes"}`}
+                onChange={handleChange}
+                value={dataUser.pais}
+                disabled={edit}
+              />
+            </div>
+          </form>
+        </div>
       </div>
-    </StyledWrapper>
+    </div>
   );
 };
-
-const StyledWrapper = styled.div`
-  .input {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    background-color: #306bb8;
-    justify-content: center;
-    border-radius: 5px;
-  }
-
-  .value {
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    color: white;
-    display: flex;
-    position: relative;
-    gap: 5px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-
-  .value:not(:active):hover,
-  .value:focus {
-    background-color: #21262c;
-  }
-
-  .value:focus,
-  .value:active {
-    background-color: #1a1f24;
-    outline: none;
-  }
-
-  .value::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -10px;
-    width: 5px;
-    height: 80%;
-    background-color: #2f81f7;
-    border-radius: 5px;
-    opacity: 0;
-  }
-
-  .value:focus::before,
-  .value:active::before {
-    opacity: 1;
-  }
-
-  .btn_closeSession {
-    border-radius: 9999px;
-    background-color: transparent;
-    border: 1px solid;
-    margin: 10px;
-    color: white;
-    padding: 10px;
-  }
-  .btn_closeSession:hover {
-    background-color: red;
-    cursor: pointer;
-  }
-`;

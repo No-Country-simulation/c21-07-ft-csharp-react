@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 9999;
 }
 
 .Navbar_Mobile_container > a > svg,
@@ -24,4 +25,16 @@
 .Button-Menu {
   background: none;
   border-style: none;
+}
+
+.button_user_menu {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.button_user_menu > svg {
+  width: 40px;
+  height: 40px;
 }

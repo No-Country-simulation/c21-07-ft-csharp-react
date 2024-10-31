@@ -4,6 +4,7 @@
   margin-top: 0;
   height: 100px;
   justify-content: center;
+  z-index: 999;
 }
 
 .home_submenu {
@@ -30,11 +31,6 @@
   font-weight: bold;
 }
 
-.arrow_subMenu {
-  width: 20px;
-  height: 20px;
-  rotate: -90deg;
-}
 .Options_Sub_menu > div:hover {
   cursor: pointer;
 }
@@ -43,7 +39,7 @@
   .Sub_Menu_Container {
     flex-direction: column;
     background: #004aad;
-    height: 200px;
+    height: 300px;
     margin-top: 60px;
     position: fixed;
     color: white;
@@ -63,7 +59,8 @@
     justify-content: space-between;
   }
 
-  .arrow_subMenu {
-    rotate: 180deg;
+  .closeSession {
+    justify-content: center;
+    align-items: center;
   }
 }

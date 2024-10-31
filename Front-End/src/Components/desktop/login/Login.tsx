@@ -4,24 +4,26 @@ import styled from "styled-components";
 import Icon from "../../icons";
 import { SuccessLogin } from "./successLogin";
 import { ErrorLogin } from "./errorLogin";
+//import { authLogin } from "../../../auth/authLogin";
 
 export const Login = () => {
   const navigate = useNavigate();
-  const [userEmail, setEmail] = useState("");
-  const [userPassword, setPassword] = useState("");
+  //  const [Email, setEmail] = useState("");
+  // const [Password, setPassword] = useState("");
   const [isLoged, setIsLoged] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
-  const email = "hugojavierdesideriomatinez@gmail.com";
-  const password = "1234";
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    if (email === userEmail && userPassword === password) {
+    try {
+      // const data = await authLogin({ Email, Password });
+      // console.log("Usuario autenticado:", data);
       setIsLoged(true);
       setTimeout(() => {
         navigate("/home");
       }, 2000);
-    } else {
+    } catch (err) {
+      console.log(err);
       setErrorMessage(!errorMessage);
       setTimeout(() => {
         setErrorMessage(false);
@@ -46,7 +48,7 @@ export const Login = () => {
                     className="input-field"
                     type="email"
                     autoComplete="off"
-                    onChange={(e) => setEmail(e.target.value)}
+            //        onChange={(e) => setEmail(e.target.value)}
                     placeholder="Email"
                     required
                   />
@@ -56,7 +58,7 @@ export const Login = () => {
                   <input
                     type="password"
                     className="input-field"
-                    onChange={(e) => setPassword(e.target.value)}
+             //       onChange={(e) => setPassword(e.target.value)}
                     placeholder="Password"
                     required
                   />
