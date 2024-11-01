@@ -3,6 +3,7 @@ using API_Fintech.Infraestructure.Data.Repository;
 using API_Fintech.Infraestructure.Data.UnitOfWork;
 using API_Fintech.InterfaceAdapters;
 using API_Fintech.Models.Authentication.Users;
+using System.Text.RegularExpressions;
 
 namespace API_Fintech.Core.Services
 {
@@ -18,6 +19,21 @@ namespace API_Fintech.Core.Services
 
         public async Task Register(RegisterDto dto)
         {
+            if (string.IsNullOrWhiteSpace(dto.Email))
+                throw new BusinessException("El campo 'Email' es requerido.");
+
+            if (string.IsNullOrWhiteSpace(dto.Password))
+                throw new BusinessException("El campo 'Password' es requerido.");
+
+            if (string.IsNullOrWhiteSpace(dto.FirstName))
+                throw new BusinessException("El campo 'FirstName' es requerido.");
+
+            if (string.IsNullOrWhiteSpace(dto.LastName))
+                throw new BusinessException("El campo 'LastName' es requerido.");
+
+            if (!IsValidEmail(dto.Email))
+                throw new BusinessException("El formato del 'Email' es inválido.");
+
             IRepository<UserAuth, long> _repository = _unitOfWork.GetRepository<UserAuth, long>();
 
             UserAuth? search =  await _repository.GetProyected(q => q.Email == dto.Email, q => q);
@@ -36,6 +52,11 @@ namespace API_Fintech.Core.Services
             });
 
            await _unitOfWork.Commit();
+        }
+        private bool IsValidEmail(string email)
+        {
+            string emailRegex = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, emailRegex, RegexOptions.IgnoreCase);
         }
     }
 }

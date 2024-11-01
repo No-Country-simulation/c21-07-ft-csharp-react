@@ -1,6 +1,7 @@
 ﻿using API_Fintech.Infraestructure.Data.Config.Context;
 using API_Fintech.Infraestructure.Data.Repository;
 using API_Fintech.Models.Authentication;
+using API_Fintech.Models.Authentication.Users;
 using Microsoft.EntityFrameworkCore;
 
 namespace API_Fintech.Infraestructure.Data.UnitOfWork
