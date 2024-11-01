@@ -1,4 +1,5 @@
 ﻿using API_Fintech.Core.Services;
+using API_Fintech.Core.Services.Interfaces;
 using API_Fintech.InterfaceAdapters;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,11 +12,14 @@ namespace API_Fintech.Core.Adapters.Controllers
     [ApiController]
     public class AutheticationController : ControllerBase
     {
-        private readonly IAuthenticationService _authenticationService;
+        private readonly AuthenticationService _authenticationService;
 
-        public AutheticationController(IAuthenticationService authenticationService)
+        private readonly EmailService _emailService;
+
+        public AutheticationController(AuthenticationService authenticationService,EmailService emailService)
         {
             _authenticationService = authenticationService;
+            _emailService = emailService;
         }
 
         [HttpPost("Login")]
@@ -29,6 +33,7 @@ namespace API_Fintech.Core.Adapters.Controllers
 
                 if (string.IsNullOrEmpty(token))
                 {
+                    Console.WriteLine("Aca esstamos pq no consiguio token");
                     return Unauthorized("Invalid credentials");
                 }
 
@@ -39,7 +44,8 @@ namespace API_Fintech.Core.Adapters.Controllers
                     UserId = userId,
                     Token = token
                 };
-
+                
+                await _emailService.SendEmailAsync(dto.Email, "Login", "Alerta: Has iniciado sesion en la aplicacion");
 
                 return Ok(response);
             }

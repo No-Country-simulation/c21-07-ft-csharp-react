@@ -1,4 +1,3 @@
-using API_Fintech.Core.Adapters.Middlewares;
 using API_Fintech.Core.Adapters.Middlewares.ExceptionMiddleware;
 using API_Fintech.Core.Services;
 using API_Fintech.Infraestructure.Data.Config.Context;
@@ -110,10 +109,14 @@ builder.Services.AddScoped(typeof(EntityBase<long>), typeof(UserAuth));
 builder.Services.AddScoped(typeof(EntityBase<long>), typeof(Account));
 builder.Services.AddScoped(typeof(EntityBase<long>), typeof(Transaction));
 builder.Services.AddScoped(typeof(IRepository<,>), typeof(Repository<,>));
-builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
+builder.Services.AddScoped<AuthenticationService>();
 builder.Services.AddScoped<ISecurityService, SecurityService>();
 builder.Services.AddScoped<RegisterService>();
+
 builder.Services.AddScoped<AccountService>();
+
+builder.Services.AddScoped<TransactionService>();
+
 
 // Configuración del servicio de correos electrónicos
 builder.Services.AddScoped<EmailService>();

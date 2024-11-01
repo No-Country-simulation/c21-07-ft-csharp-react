@@ -1,4 +1,6 @@
-﻿namespace API_Fintech.Core.Services
+﻿using API_Fintech.Core.Services.Interfaces;
+
+namespace API_Fintech.Core.Services
 {
     public class SecurityService : ISecurityService
     {

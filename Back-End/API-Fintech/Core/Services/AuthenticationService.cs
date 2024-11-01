@@ -1,5 +1,6 @@
 ﻿using API_Fintech.Core.Adapters.Middlewares;
 using API_Fintech.Core.Adapters.Middlewares.ExceptionMiddleware;
+using API_Fintech.Core.Services.Interfaces;
 using API_Fintech.Infraestructure.Data.UnitOfWork;
 using API_Fintech.InterfaceAdapters;
 using API_Fintech.Models.Authentication.Users;

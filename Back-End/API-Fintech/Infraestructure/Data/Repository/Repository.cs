@@ -14,7 +14,7 @@ namespace API_Fintech.Infraestructure.Data.Repository
         public Repository(DefaultContext context)
         {
             _context = context;
-            _dbSet = context.Set<TE>();
+            _dbSet = _context.Set<TE>();
         }
 
         public async Task<TE> Add(TE entity)
@@ -114,7 +114,7 @@ namespace API_Fintech.Infraestructure.Data.Repository
                                .ToListAsync();
         }
 
- 
+
         public async Task<TProyected?> GetProyected<TProyected>(Expression<Func<TE, bool>> predicate, Expression<Func<TE, TProyected>> proyection)
         {
             return await _dbSet.Where(predicate)
@@ -122,15 +122,41 @@ namespace API_Fintech.Infraestructure.Data.Repository
                                .FirstOrDefaultAsync();
 
         }
-      
+
 
         public async Task<IEnumerable<TProyected?>> GetProyectedMany<TProyected>(
-            Expression<Func<TE, bool>> predicate, Expression<Func<TE, TProyected>> proyection)
+            Expression<Func<TE, bool>> predicate, Expression<Func<TE, TProyected>> projection)
         {
 
-            IEnumerable<TProyected>  result = await _dbSet.Where(predicate)
-                            .Select(proyection)
+            IEnumerable<TProyected> result = await _dbSet.Where(predicate)
+                            .Select(projection)
                             .ToListAsync();
+
+            return result;
+        }
+
+
+        public async Task<IEnumerable<TProyected?>> GetProyectedMany<TProyected, TOrderBy>(
+           Expression<Func<TE, bool>> predicate, Expression<Func<TE, TProyected>> projection, Expression<Func<TE, TOrderBy>> orderBy, bool isDescending,int take)
+        {
+            if(take <= 0)
+            {
+                throw new ArgumentException("Take value must be >= 0.");
+            }
+
+            IEnumerable<TProyected> result = isDescending ?
+                             await _dbSet
+                                .Where(predicate)
+                                .OrderByDescending(orderBy) // Ordenar en orden descendente
+                                .Take(take)                 // Limitar el número de resultados
+                                .Select(projection)
+                                .ToListAsync()
+                            : await _dbSet
+                                .Where(predicate)
+                                .OrderBy(orderBy) // Ordenar en orden descendente
+                                .Take(take)                 // Limitar el número de resultados
+                                .Select(projection)
+                                .ToListAsync();
 
             return result;
         }

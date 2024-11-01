@@ -3,6 +3,50 @@
   "WorkspaceRootPath": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\adapters\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\adapters\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\interfaceadapters\\saldoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:interfaceadapters\\saldoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\interfaceadapters\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:interfaceadapters\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\infraestructure\\data\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:infraestructure\\data\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\infraestructure\\data\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:infraestructure\\data\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\infraestructure\\data\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:infraestructure\\data\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\adapters\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\adapters\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\adapters\\controllers\\autheticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\adapters\\controllers\\autheticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\infraestructure\\data\\seeds\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:infraestructure\\data\\seeds\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,24 +59,8 @@
       "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\interfaceadapters\\saldoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:interfaceadapters\\saldoresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\interfaceadapters\\accountdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:interfaceadapters\\accountdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\services\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\adapters\\controllers\\autheticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\adapters\\controllers\\autheticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\adapters\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\adapters\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\adapters\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\interfaceadapters\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:interfaceadapters\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -62,20 +86,8 @@
       "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\entities\\transaction\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\infraestructure\\data\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:infraestructure\\data\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\entities\\authentication\\users\\userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\entities\\authentication\\users\\userauth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\infraestructure\\data\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:infraestructure\\data\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\infraestructure\\data\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:infraestructure\\data\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\services\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -84,14 +96,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\services\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\services\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:core\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\interfaceadapters\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|solutionrelative:interfaceadapters\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9EA15C7-3AE8-4851-8AD8-099E8DFB2F05}|API-Fintech.csproj|c:\\users\\agust\\source\\repos\\bancadigital\\back-end\\api-fintech\\core\\entities\\notification\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,154 +121,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\AuthenticationService.cs",
-              "RelativeDocumentMoniker": "Core\\Services\\AuthenticationService.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\AuthenticationService.cs",
-              "RelativeToolTip": "Core\\Services\\AuthenticationService.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAwFEAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T18:30:38.513Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\AccountService.cs",
-              "RelativeDocumentMoniker": "Core\\Services\\AccountService.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\AccountService.cs",
-              "RelativeToolTip": "Core\\Services\\AccountService.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAwwCcAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T13:41:25.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountInfoController.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\AccountInfoController.cs",
-              "RelativeDocumentMoniker": "Core\\Adapters\\Controllers\\AccountInfoController.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\AccountInfoController.cs",
-              "RelativeToolTip": "Core\\Adapters\\Controllers\\AccountInfoController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowC0AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T21:19:13.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "Core\\Adapters\\Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "Core\\Adapters\\Controllers\\TransactionController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T14:24:44.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "SeedData.cs",
               "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Seeds\\SeedData.cs",
               "RelativeDocumentMoniker": "Infraestructure\\Data\\Seeds\\SeedData.cs",
               "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Seeds\\SeedData.cs",
               "RelativeToolTip": "Infraestructure\\Data\\Seeds\\SeedData.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAwwHAAAAA1AAAA",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAwwHIAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T22:36:38.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SaldoResponseDto.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\SaldoResponseDto.cs",
-              "RelativeDocumentMoniker": "InterfaceAdapters\\SaldoResponseDto.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\SaldoResponseDto.cs",
-              "RelativeToolTip": "InterfaceAdapters\\SaldoResponseDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T19:40:32.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountDetailsDto.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\AccountDetailsDto.cs",
-              "RelativeDocumentMoniker": "InterfaceAdapters\\AccountDetailsDto.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\AccountDetailsDto.cs",
-              "RelativeToolTip": "InterfaceAdapters\\AccountDetailsDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T23:13:21.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T19:23:48.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "AutheticationController.cs",
               "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\AutheticationController.cs",
               "RelativeDocumentMoniker": "Core\\Adapters\\Controllers\\AutheticationController.cs",
               "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\AutheticationController.cs",
               "RelativeToolTip": "Core\\Adapters\\Controllers\\AutheticationController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwBQAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T18:30:25.544Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "Core\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\EmailService.cs",
-              "RelativeToolTip": "Core\\Services\\EmailService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T21:32:15.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "IAuthenticationService.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\IAuthenticationService.cs",
-              "RelativeDocumentMoniker": "Core\\Services\\IAuthenticationService.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\IAuthenticationService.cs",
-              "RelativeToolTip": "Core\\Services\\IAuthenticationService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T21:56:32.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EmailController.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\EmailController.cs",
-              "RelativeDocumentMoniker": "Core\\Adapters\\Controllers\\EmailController.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\EmailController.cs",
-              "RelativeToolTip": "Core\\Adapters\\Controllers\\EmailController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T18:06:32.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "RegisterController.cs",
               "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\RegisterController.cs",
               "RelativeDocumentMoniker": "Core\\Adapters\\Controllers\\RegisterController.cs",
@@ -277,124 +177,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\LoginDto.cs",
-              "RelativeDocumentMoniker": "InterfaceAdapters\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\LoginDto.cs",
-              "RelativeToolTip": "InterfaceAdapters\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 8,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\AuthenticationService.cs",
+              "RelativeToolTip": "Core\\Services\\AuthenticationService.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAcwFEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T23:12:10.846Z",
+              "WhenOpened": "2024-10-24T18:30:38.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\agust\\AppData\\Roaming\\Microsoft\\UserSecrets\\35805b1c-2df0-4000-a90d-bb30197433fb\\secrets.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\35805b1c-2df0-4000-a90d-bb30197433fb\\secrets.json",
-              "ToolTip": "C:\\Users\\agust\\AppData\\Roaming\\Microsoft\\UserSecrets\\35805b1c-2df0-4000-a90d-bb30197433fb\\secrets.json",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\35805b1c-2df0-4000-a90d-bb30197433fb\\secrets.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-24T15:17:53.904Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Entities\\Transaction\\Account.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Transaction\\Account.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Entities\\Transaction\\Account.cs",
-              "RelativeToolTip": "Core\\Entities\\Transaction\\Account.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T13:23:34.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\UnitOfWork\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Data\\UnitOfWork\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\UnitOfWork\\UnitOfWork.cs",
-              "RelativeToolTip": "Infraestructure\\Data\\UnitOfWork\\UnitOfWork.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAswCkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T13:16:43.365Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserAuth.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Entities\\Authentication\\Users\\UserAuth.cs",
-              "RelativeDocumentMoniker": "Core\\Entities\\Authentication\\Users\\UserAuth.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Entities\\Authentication\\Users\\UserAuth.cs",
-              "RelativeToolTip": "Core\\Entities\\Authentication\\Users\\UserAuth.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T22:42:25.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Repository\\IRepository.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Data\\Repository\\IRepository.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Repository\\IRepository.cs",
-              "RelativeToolTip": "Infraestructure\\Data\\Repository\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T22:44:47.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "Infraestructure\\Data\\Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Repository\\Repository.cs",
-              "RelativeToolTip": "Infraestructure\\Data\\Repository\\Repository.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAqwIgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T22:44:50.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegisterService.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\RegisterService.cs",
-              "RelativeDocumentMoniker": "Core\\Services\\RegisterService.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\RegisterService.cs",
-              "RelativeToolTip": "Core\\Services\\RegisterService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T18:31:48.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ISecurityService.cs",
-              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\ISecurityService.cs",
-              "RelativeDocumentMoniker": "Core\\Services\\ISecurityService.cs",
-              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\ISecurityService.cs",
-              "RelativeToolTip": "Core\\Services\\ISecurityService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T23:23:08.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 7,
               "Title": "SecurityService.cs",
               "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\SecurityService.cs",
               "RelativeDocumentMoniker": "Core\\Services\\SecurityService.cs",
@@ -407,7 +203,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 6,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Repository\\IRepository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Data\\Repository\\IRepository.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Repository\\IRepository.cs",
+              "RelativeToolTip": "Infraestructure\\Data\\Repository\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T22:44:47.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Data\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\Repository\\Repository.cs",
+              "RelativeToolTip": "Infraestructure\\Data\\Repository\\Repository.cs",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAQwIgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T22:44:50.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Infraestructure\\Data\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Infraestructure\\Data\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "Infraestructure\\Data\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvykAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T13:16:43.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RegisterDto.cs",
               "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\RegisterDto.cs",
               "RelativeDocumentMoniker": "InterfaceAdapters\\RegisterDto.cs",
@@ -420,7 +255,177 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SaldoResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\SaldoResponseDto.cs",
+              "RelativeDocumentMoniker": "InterfaceAdapters\\SaldoResponseDto.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\SaldoResponseDto.cs",
+              "RelativeToolTip": "InterfaceAdapters\\SaldoResponseDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T19:40:32.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAswHIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T19:23:48.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\IAuthenticationService.cs",
+              "RelativeToolTip": "Core\\Services\\IAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:56:32.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\EmailService.cs",
+              "RelativeToolTip": "Core\\Services\\EmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:32:15.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AccountDetailsDto.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\AccountDetailsDto.cs",
+              "RelativeDocumentMoniker": "InterfaceAdapters\\AccountDetailsDto.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\AccountDetailsDto.cs",
+              "RelativeToolTip": "InterfaceAdapters\\AccountDetailsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T23:13:21.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountInfoController.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\AccountInfoController.cs",
+              "RelativeDocumentMoniker": "Core\\Adapters\\Controllers\\AccountInfoController.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\AccountInfoController.cs",
+              "RelativeToolTip": "Core\\Adapters\\Controllers\\AccountInfoController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowC0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T21:19:13.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\AccountService.cs",
+              "RelativeToolTip": "Core\\Services\\AccountService.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwCcAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T13:41:25.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EmailController.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\EmailController.cs",
+              "RelativeDocumentMoniker": "Core\\Adapters\\Controllers\\EmailController.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Adapters\\Controllers\\EmailController.cs",
+              "RelativeToolTip": "Core\\Adapters\\Controllers\\EmailController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T18:06:32.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\LoginDto.cs",
+              "RelativeDocumentMoniker": "InterfaceAdapters\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\InterfaceAdapters\\LoginDto.cs",
+              "RelativeToolTip": "InterfaceAdapters\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T23:12:10.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\agust\\AppData\\Roaming\\Microsoft\\UserSecrets\\35805b1c-2df0-4000-a90d-bb30197433fb\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\35805b1c-2df0-4000-a90d-bb30197433fb\\secrets.json",
+              "ToolTip": "C:\\Users\\agust\\AppData\\Roaming\\Microsoft\\UserSecrets\\35805b1c-2df0-4000-a90d-bb30197433fb\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\35805b1c-2df0-4000-a90d-bb30197433fb\\secrets.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-24T15:17:53.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Entities\\Transaction\\Account.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Transaction\\Account.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Entities\\Transaction\\Account.cs",
+              "RelativeToolTip": "Core\\Entities\\Transaction\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T13:23:34.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserAuth.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Entities\\Authentication\\Users\\UserAuth.cs",
+              "RelativeDocumentMoniker": "Core\\Entities\\Authentication\\Users\\UserAuth.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Entities\\Authentication\\Users\\UserAuth.cs",
+              "RelativeToolTip": "Core\\Entities\\Authentication\\Users\\UserAuth.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T22:42:25.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RegisterService.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\RegisterService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\RegisterService.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\RegisterService.cs",
+              "RelativeToolTip": "Core\\Services\\RegisterService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T18:31:48.631Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 23,
+              "Title": "ISecurityService.cs",
+              "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\ISecurityService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\ISecurityService.cs",
+              "ToolTip": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Services\\ISecurityService.cs",
+              "RelativeToolTip": "Core\\Services\\ISecurityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T23:23:08.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Core\\Entities\\Notification\\Message.cs",
               "RelativeDocumentMoniker": "Core\\Entities\\Notification\\Message.cs",
@@ -428,12 +433,11 @@
               "RelativeToolTip": "Core\\Entities\\Notification\\Message.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T21:47:34.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T21:47:34.902Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "serviceDependencies.json",
               "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Properties\\serviceDependencies.json",
               "RelativeDocumentMoniker": "Properties\\serviceDependencies.json",
@@ -441,12 +445,11 @@
               "RelativeToolTip": "Properties\\serviceDependencies.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-24T14:39:07.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T14:39:07.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -454,12 +457,11 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-30T22:28:31.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-30T22:28:31.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\agust\\source\\repos\\BancaDigital\\Back-End\\API-Fintech\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",

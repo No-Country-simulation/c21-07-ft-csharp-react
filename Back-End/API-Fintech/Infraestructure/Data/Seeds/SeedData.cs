@@ -97,11 +97,13 @@ namespace API_Fintech.Infraestructure.Data.Seeds
                 new Transaction
                 {
                     Id = 1,
-                    Amount = 1000,
+                    Amount = 20000,
                     Date = DateTime.Now,
                     Motivo = "DepositoInicial",
                     DestinationAccountId = 987654321,
                     OriginAccountId = 1234567890,
+                    CompleteCallerName = "Tomas C",
+                    CompleteReceiverName = "Agustin M",
                     Type = "Credito",
                 },
                 new Transaction
@@ -112,6 +114,8 @@ namespace API_Fintech.Infraestructure.Data.Seeds
                     Motivo = "DepositoInicial",
                     DestinationAccountId = 123456789,
                     OriginAccountId = 1234567890,
+                    CompleteCallerName = "Tomas C",
+                    CompleteReceiverName = "Hugo D",
                     Type = "Credito",
 
                 },
@@ -121,8 +125,10 @@ namespace API_Fintech.Infraestructure.Data.Seeds
                     Amount = 20000,
                     Date = DateTime.Now,
                     Motivo = "DepositoInicial",
-                    DestinationAccountId = 1234567890,
-                    OriginAccountId = 123456789,
+                    DestinationAccountId = 987654321,
+                    OriginAccountId = 1234567890,
+                    CompleteCallerName = "Tomas C",
+                    CompleteReceiverName = "Agustin M",
                     Type = "Debito",
                 },
                 new Transaction
@@ -131,8 +137,10 @@ namespace API_Fintech.Infraestructure.Data.Seeds
                     Amount = 20000,
                     Date = DateTime.Now,
                     Motivo = "DepositoInicial",
-                    DestinationAccountId = 1234567890,
-                    OriginAccountId = 987654321,
+                    DestinationAccountId = 123456789,
+                    OriginAccountId = 1234567890,
+                    CompleteCallerName = "Tomas C",
+                    CompleteReceiverName = "Hugo D",
                     Type = "Debito",
 
                 }

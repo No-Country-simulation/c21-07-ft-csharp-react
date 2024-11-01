@@ -6,10 +6,15 @@
   justify-content: center;
 }
 
+.home_submenu {
+  margin-right: 10px;
+}
+
 .List_options {
   display: flex;
   flex-direction: row;
   margin-top: 10px;
+  gap: 30px;
 }
 
 .Options_Sub_menu {
@@ -25,15 +30,9 @@
   font-weight: bold;
 }
 
-.Icon_Sub_menu {
-  height: 30px;
-  width: 30px;
-}
-
 .arrow_subMenu {
   width: 20px;
   height: 20px;
-  margin-right: 15px;
   rotate: -90deg;
 }
 .Options_Sub_menu > div:hover {
@@ -53,6 +52,10 @@
   .List_options {
     flex-direction: column;
     gap: 25px;
+  }
+
+  .home_submenu {
+    margin-right: 0;
   }
 
   .Options_Sub_menu {

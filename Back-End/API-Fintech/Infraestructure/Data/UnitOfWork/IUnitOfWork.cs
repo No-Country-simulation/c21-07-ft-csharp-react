@@ -1,4 +1,5 @@
-﻿using API_Fintech.Infraestructure.Data.Repository;
+﻿using API_Fintech.Infraestructure.Data.Config.Context;
+using API_Fintech.Infraestructure.Data.Repository;
 using API_Fintech.Models.Authentication;
 
 
@@ -14,6 +15,9 @@ namespace API_Fintech.Infraestructure.Data.UnitOfWork
         void DetachAllEntities();
 
         void Dispose();
+        Task BeginTransactionAsync();
+        Task CommitTransactionAsync();
+        Task RollBackTransactionAsync();
     }
 
 }
