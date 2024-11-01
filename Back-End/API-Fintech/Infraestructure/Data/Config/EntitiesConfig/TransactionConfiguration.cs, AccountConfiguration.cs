@@ -16,6 +16,8 @@ namespace API_Fintech.Infraestructure.Data.Config.EntitiesConfig
 
             builder.Property(t => t.OriginAccountId).HasColumnName("OriginAccountId").IsRequired();
             builder.Property(t => t.DestinationAccountId).HasColumnName("DestinationAccountId").IsRequired();
+            builder.Property(t => t.CompleteCallerName).HasColumnName("CompleteCallerName").IsRequired();
+            builder.Property(t => t.CompleteReceiverName).HasColumnName("CompleteReceiverName").IsRequired();
             builder.Property(t => t.Amount).HasColumnName("Amount").IsRequired();
             builder.Property(t => t.Type).HasColumnName("Type").IsRequired();
             builder.Property(t => t.Date).HasColumnName("Date").IsRequired();

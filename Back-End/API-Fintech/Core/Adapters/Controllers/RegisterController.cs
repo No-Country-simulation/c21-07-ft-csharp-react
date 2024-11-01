@@ -1,6 +1,5 @@
 ﻿using API_Fintech.Core.Services;
 using API_Fintech.InterfaceAdapters;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API_Fintech.Core.Adapters.Controllers
@@ -17,13 +16,12 @@ namespace API_Fintech.Core.Adapters.Controllers
             this.registerService = registerService;
         }
 
-        [HttpPost]
+        [HttpPost("Register")]
         public async Task<ActionResult> Register([FromBody] RegisterDto dto)
         {
             try
             {
                 await registerService.Register(dto);
-
 
                 return Ok("User creado con exito");
             }

@@ -1,4 +1,5 @@
 ﻿using API_Fintech.Core.Services;
+using API_Fintech.Core.Services.Interfaces;
 using API_Fintech.InterfaceAdapters;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,9 +12,9 @@ namespace API_Fintech.Core.Adapters.Controllers
     [ApiController]
     public class AutheticationController : ControllerBase
     {
-        private readonly IAuthenticationService _authenticationService;
+        private readonly AuthenticationService _authenticationService;
 
-        public AutheticationController(IAuthenticationService authenticationService)
+        public AutheticationController(AuthenticationService authenticationService)
         {
             _authenticationService = authenticationService;
         }
@@ -29,6 +30,7 @@ namespace API_Fintech.Core.Adapters.Controllers
 
                 if (string.IsNullOrEmpty(token))
                 {
+                    Console.WriteLine("Aca esstamos pq no consiguio token");
                     return Unauthorized("Invalid credentials");
                 }
 

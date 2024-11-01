@@ -14,7 +14,20 @@ namespace API_Fintech.Infraestructure.Data.UnitOfWork
             _context = context;
         }
 
+        public async Task RollBackTransactionAsync()
+        {
+            await _context.Database.RollbackTransactionAsync();
+        }
 
+        public async Task BeginTransactionAsync()
+        {
+          await   _context.Database.BeginTransactionAsync();
+        }
+
+        public async Task CommitTransactionAsync()
+        {
+           await _context.Database.CommitTransactionAsync();
+        }
         public async Task<int> Commit()
         {
             return await _context.SaveChangesAsync();
