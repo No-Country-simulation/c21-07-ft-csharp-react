@@ -1,6 +1,6 @@
 .Fast_access_options_Container {
   display: flex;
-  width: 40%;
+  width: 30%;
 }
 
 .menu_fastAccess {
@@ -15,10 +15,10 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background: #00bf63;
   font-size: 17px;
   gap: 6rem;
-  color: white;
+  background: white;
+  color: #0d5ea1;
 }
 
 .option_fastAccess > svg {
@@ -53,7 +53,6 @@
 
   .option_fastAccess p {
     width: 99%;
-    color: #00bf63;
   }
 
   .option_fastAccess > svg {

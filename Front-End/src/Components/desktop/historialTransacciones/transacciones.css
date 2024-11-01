@@ -1,5 +1,5 @@
 .transacciones_container {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -9,19 +9,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 6rem;
-}
-
-.first_colum {
-  margin-left: 15px;
 }
 
 .colums_transacciones {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center;
+  width: 100%;
 }
 
 .title_transacciones_div {
@@ -32,52 +23,56 @@
   align-items: center;
   padding-left: 50px;
   color: #004aad;
+  box-sizing: border-box;
 }
 
-.title_colums {
-  font-size: 12px;
+thead {
+  background-color: #0d5ea1;
+  color: #fff;
 }
-.text_colums {
-  font-size: 11px;
+
+tbody {
+  background-color: #e4f0f5;
 }
-.list_transacciones {
-  justify-content: center;
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
-@media (max-width: 1440px) {
-  .list_transacciones {
-    gap: 3rem;
-  }
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
 }
-@media (max-width: 1024px) {
-  .list_transacciones {
-    gap: 1.5rem;
-  }
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
   .transacciones_container {
     width: 100%;
   }
-  .list_transacciones {
-    gap: 2rem;
-  }
 }
+
 @media (max-width: 425px) {
-  .list_transacciones {
-    gap: 0.5rem;
-  }
-}
-@media (max-width: 349px) {
-  .title_colums {
-    font-size: 10px;
-  }
-  .text_colums {
-    font-size: 9px;
-  }
   .title_transacciones_div > h2 {
     font-size: 20px;
   }
   .list_transacciones {
     gap: 0.5rem;
+  }
+  table {
+    overflow-x: auto;
+    display: block;
   }
 }

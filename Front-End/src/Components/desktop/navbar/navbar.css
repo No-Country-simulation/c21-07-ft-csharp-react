@@ -8,18 +8,15 @@
   align-items: center;
   color: white;
 }
-.logo_home {
+.div_navbar_options > div > svg {
   width: 90px;
   height: 90px;
   margin-left: 35px;
   margin-top: 10px;
 }
 
-.userIcon_home {
-  width: 40px;
-  height: 40px;
-  margin-right: 35px;
-  margin-top: 10px;
+.div_navbar_options > div:hover {
+  cursor: pointer;
 }
 
 .div_navbar_options {
@@ -27,9 +24,11 @@
   gap: 2rem;
 }
 
-.icon_menu {
-  height: 30px;
-  width: 30px;
+.button_user > svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 35px;
+  margin-top: 10px;
 }
 
 .button_user {

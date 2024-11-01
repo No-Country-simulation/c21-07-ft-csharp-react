@@ -1,17 +1,29 @@
-import { Navbar_Mobile } from "../Components/mobile/navbar-Mobile/Navbar_Mobile";
+import "./User_settings_view.css";
+import { NavbarWindowWidth } from "../Components/desktop/navbar/NavbarWindowWidth";
 
-export const User_setting_mobile = () => {
+export const UserConfings = () => {
+  /* const data = {
+    name: "Hugo Desiderio",
+    email: "hugojavierdesiderio@gmail.com",
+    password: "1234",
+  }; */
+
   return (
     <>
-      <Navbar_Mobile />
-      <div>
-        <ul>
-          <li>Datos Personales</li>
-          <li>Notificaciones</li>
-          <li>Contacto soporte</li>
-          <li>Preguntas Frecuentes</li>
-        </ul>
-        <button>Cerrar sesion</button>
+      <NavbarWindowWidth />
+
+      <div className="userConfigsContainer">
+        <div>
+          <h2>My profile</h2>
+          <form className="formUserSettings">
+            <label htmlFor="name">Nombre</label>
+            <input type="name" disabled />
+            <label htmlFor="email">Email</label>
+            <input type="email" disabled />
+            <label htmlFor="contraseña">contraseña</label>
+            <input type="password" disabled />
+          </form>
+        </div>
       </div>
     </>
   );
