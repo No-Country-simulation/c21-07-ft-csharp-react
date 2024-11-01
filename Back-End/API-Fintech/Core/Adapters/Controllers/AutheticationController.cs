@@ -14,9 +14,12 @@ namespace API_Fintech.Core.Adapters.Controllers
     {
         private readonly AuthenticationService _authenticationService;
 
-        public AutheticationController(AuthenticationService authenticationService)
+        private readonly EmailService _emailService;
+
+        public AutheticationController(AuthenticationService authenticationService,EmailService emailService)
         {
             _authenticationService = authenticationService;
+            _emailService = emailService;
         }
 
         [HttpPost("Login")]
@@ -41,7 +44,8 @@ namespace API_Fintech.Core.Adapters.Controllers
                     UserId = userId,
                     Token = token
                 };
-
+                
+                await _emailService.SendEmailAsync(dto.Email, "Login", "Alerta: Has iniciado sesion en la aplicacion");
 
                 return Ok(response);
             }

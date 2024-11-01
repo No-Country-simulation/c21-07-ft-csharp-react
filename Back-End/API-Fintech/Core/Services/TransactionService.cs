@@ -13,8 +13,10 @@ namespace API_Fintech.Core.Services
     {
         IUnitOfWork _unitOfWork;
         ISecurityService _securityService;
-        public TransactionService(IUnitOfWork unitOfWork, ISecurityService securityService)
+        EmailService _emailService;
+        public TransactionService(IUnitOfWork unitOfWork, ISecurityService securityService, EmailService emailService)
         {
+            _emailService = emailService;
             _unitOfWork = unitOfWork;
             _securityService = securityService;
         }
@@ -99,6 +101,9 @@ namespace API_Fintech.Core.Services
 
                 //Aqui termina la Transaccion
                 await _unitOfWork.CommitTransactionAsync();
+
+                await _emailService.SendEmailAsync(receiverUserAuth.Email, "Transferencia Exitosa", "Se ha recibido una transferencia exitosa de " + $"{callerUserAuth.FirstName} {callerUserAuth.LastName}");
+                await _emailService.SendEmailAsync(callerUserAuth.Email, "Transferencia Exitosa", "Se ha enviado una transferencia exitosa a " + $"{receiverUserAuth.FirstName} {receiverUserAuth.LastName}");
 
             }
             catch (Exception ex)

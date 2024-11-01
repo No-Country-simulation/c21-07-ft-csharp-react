@@ -12,7 +12,7 @@ namespace API_Fintech.Core.Adapters.Controllers
     [ApiController]
     public class TransactionController : ControllerBase
     {
-
+        
         private readonly TransactionService _transactionService;
 
         public TransactionController(TransactionService transactionService)
